@@ -111,7 +111,7 @@ function reactive(){
                      % if user.product_policy in (0,2,3,5):
                          <a class="opt-btn btn-default" href="/recharge?account_number=${user.account_number}">充值卡续费</a>
                      % elif user.product_policy in (1,4): 
-                     <a class="opt-btn btn-default" href="/recharge?account_number=${user.account_number}">充值卡充值</a>
+                     <a class="opt-btn btn-default" href="/open">到期新开</a>
                      % endif
                      <a class="opt-btn btn-default" href="/password/update?account_number=${user.account_number}">修改密码</a>
                  </td>
@@ -158,5 +158,4 @@ function reactive(){
     ${sidebar_ui.login_box()}
     ${sidebar_ui.user_box()}
     ${sidebar_ui.service_box()}
-    ${sidebar_ui.qrcode_box()}
-</%def>
+    ${sidebar_ui.qrcode
